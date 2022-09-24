@@ -59,6 +59,8 @@ List of switch case programming exercises
 
 
 Assignment#07
+Surge Link : mubi.assignment07.surge.sh
+GitHub Link: https://github.com/MubeenYasin/Assignment07.git
 
 Dear Students,
 Modren Apps(Web and Mobile, API) Batch01 Section-B
@@ -72,9 +74,6 @@ Requirements:
 Deadline: 02/10/2022!
 
 Submit link: https://forms.gle/6YmtPH1vX7bQKGbYA
-
-Best Of Luck 🤞 
-
 
 /* ---------------------------------------------*/
 /* 01. Write a ts program to find maximum between two numbers.*/

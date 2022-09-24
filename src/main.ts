@@ -6,32 +6,121 @@ function stringLength(sl:string){
     return(
         sl.length
     )
-
 }
-
 console.log(`--------------------
    Problem No. 01
 --------------------`)
 console.log(`String Length  = ${stringLength('I Love Pakistan')}`)
 
+/* ---------------------------------------------*/
+/* 2. Write a ts program to copy one string to another string.*/
+/* ---------------------------------------------*/
+
+function copyString(str1:string):string{
+    let copyString:string = str1 
+    return(
+        copyString
+    )
+}
+console.log(`
+--------------------
+   Problem No. 02
+--------------------`)
+console.log(`Copied String  = ${copyString('I Love Muhammad')}`)
+
+/* ---------------------------------------------*/
+/* 3. Write a ts program to concatenate two strings.*/
+/* ---------------------------------------------*/
+
+function concatString(str1:string, str2:string):string{
+    let concatedString:string = str1.concat(str2)
+    return(
+        concatedString
+    )
+}
+console.log(`
+--------------------
+   Problem No. 03
+--------------------`)
+console.log(`concated String  = ${concatString('I Love Muhammad, ', 'ALLHAMDU LILLAH I follow him')}`)
+
+/* ---------------------------------------------*/
+/* 4. Write a ts program to compare two strings.*/
+/* ---------------------------------------------*/
+function compareString(cmpS1:string, cmpS2:string){
+    let compare:number = cmpS1.localeCompare(cmpS2)
+    return compare
+}
+console.log(`
+--------------------
+   Problem No. 04
+--------------------`)
+console.log(`compared String Retun  = ${compareString('I Love Muhammad', 'I Love Muhammad')}`)
+
+/* ---------------------------------------------*/
+/* 5. Write a ts program to convert lowercase string to uppercase.*/
+/* ---------------------------------------------*/
+function toUpper(tu:string):string{
+    let upperCaseed:string = tu.toUpperCase() 
+    return(
+        upperCaseed
+    )
+}
+console.log(`
+--------------------
+   Problem No. 05
+--------------------`)
+console.log(`Upper Cased String  = ${toUpper('I Love Muhammad')}`)
+
+/* ---------------------------------------------*/
+/* 6. Write a ts program to convert uppercase string to lowercase.*/
+/* ---------------------------------------------*/
+function toLower(tu:string):string{
+    let loweredCaseed:string = tu.toLowerCase() 
+    return(
+        loweredCaseed
+    )
+}
+console.log(`
+--------------------
+   Problem No. 06
+--------------------`)
+console.log(`Lower Caseed String  = ${toLower('I LOVE MUHAMMAD')}`)
+
+/* ---------------------------------------------*/
+/* 7. Write a ts program to toggle case of each character of a string.*/
+/* ---------------------------------------------*/
 
 
 
+function toggleCase(tl:string){
 
+    for(let tli:number = 0; tli < tl.length; tli++){
+        tl.charAt(tli)
+        return tl
+        // if(tl.charAt(tli) === tl.charAt(tli).toLowerCase){
+        // }
+    }
+}
+
+console.log(`
+--------------------
+   Problem No. 07
+--------------------`)
+toggleCase('HkHkjHkH')
+
+console.log(`Toggled Case String  = ${toggleCase('LoVe')}`)
 
 /* ---------------------------------------------*/
 /* */
 /* ---------------------------------------------*/
 
 
+
+
+
 /*
 String Exercise
-2. Write a ts program to copy one string to another string.
-3. Write a ts program to concatenate two strings.
-4. Write a ts program to compare two strings.
-5. Write a ts program to convert lowercase string to uppercase.
-6. Write a ts program to convert uppercase string to lowercase.
-7. Write a ts program to toggle case of each character of a string.
 8. Write a ts program to find total number of alphabets, digits or special character in a string.
 9. Write a ts program to count total number of vowels and consonants in a string.
 10. Write a ts program to count total number of words in a string.

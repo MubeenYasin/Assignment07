@@ -1,0 +1,319 @@
+    <div class="main">
+        <!-- 1. Write a ts program to find maximum between two numbers. -->
+        <div class="max-number-bt-2 style">
+            <h2>1. Write a ts program to find maximum between two numbers.</h3>
+                <form class="inputs">
+                    <h3>First Number</h3>
+                    <input type="number" id="num01"> <br />
+                    <h3>Second Number</h3>
+                    <input type="number" id="num02"> <br />
+
+                    <h3>Check Status</h3>
+                    <button type="submit" id="btn01">Check</button>
+                    <p>Open Console log to check the output "Press f12"</p>
+                </form>
+        </div>
+
+        <!-- 2. Write a ts program to find maximum between three numbers. -->
+        <div class="max-number-bt-3 style">
+            <h2>2. Write a ts program to find maximum between three numbers.</h2>
+            <form class="inputs-2">
+                <h3>First Number</h3>
+                <input type="number" id="num01-2"> <br />
+                <h3>Second Number</h3>
+                <input type="number" id="num02-2"> <br />
+                <h3>Third Number</h3>
+                <input type="number" id="num03-2"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 3. Write a ts program to check whether a number is negative, positive or zero. -->
+        <div class="problem03 style">
+            <form id="problem03">
+                <h2>3. Write a ts program to check whether a number is negative, positive or zero.</h2>
+                <h3>Type a Number</h3>
+                <input type="number" id="PoN">
+                <!--Postive or Nagetive Number -->
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 4. Write a ts program to check whether a number is divisible by 5 and 11 or not. -->
+        <div class="problem04 style">
+            <h2>4. Write a ts program to check whether a number is divisible by 5 and 11 or not.</h2>
+            <form id="problem04">
+                <h3>Type a Nubmer for Division</h3>
+                <input type="number" id="divideTo"> <br />
+
+                <h3>Type a Number for Divisible</h3>
+                <input type="number" id="divideBy"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 5. Write a ts program to check whether a number is even or odd.-->
+        <div class="problem05 style">
+            <h2>5. Write a ts program to check whether a number is even or odd.</h2>
+            <form id="problem05">
+                <h3>Type a Nubmer</h3>
+                <input type="number" id="input05"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit" title="Type Only Number">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 6. Write a ts program to check whether a year is leap year or not.-->
+        <div class="problem06 style">
+            <h2>6. Write a ts program to check whether a year is leap year or not.</h2>
+            <form id="problem06">
+                <h3>Type a Year</h3>
+                <input type="number" id="year"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 7. Write a ts program to check whether a character is alphabet or not.-->
+        <div class="problem07 style">
+            <h2>7. Write a ts program to check whether a character is alphabet or not.</h2>
+            <form id="problem07">
+                <h3>Type a Character</h3>
+                <input type="text" id="character"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 8. Write a ts program to input any alphabet and check whether it is vowel or consonant.-->
+        <div class="problem08 style">
+            <h2>8. Write a ts program to input any alphabet and check whether it is vowel or consonant.</h2>
+            <form id="problem08">
+                <h3>Type a Charactor</h3>
+                <input type="text" id="input08"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 9. Write a ts program to input any character and check whether it is alphabet, digit or special character.-->
+        <div class="problem09 style">
+            <h2>9. Write a ts program to input any character and check whether it is alphabet, digit or special
+                character.</h2>
+            <form id="problem09">
+                <h3>Type a Charactor</h3>
+                <input type="text" id="input09"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 10. Write a ts program to check whether a character is uppercase or lowercase alphabet..-->
+        <div class="problem07B style">
+            <h2>10. Write a ts program to check whether a character is uppercase or lowercase alphabet.</h2>
+            <form id="problem07B">
+                <h3>Type a Character</h3>
+                <input type="text" id="characterB"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 11. Write a ts program to input week number and print week day.-->
+        <div class="problem11 style">
+            <h2>11. Write a ts program to input week number and print week day.</h2>
+            <form id="problem11">
+                <h3>Type a Nubmer of the Day</h3>
+                <input type="number" id="input11"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 12. Write a ts program to input month number and print number of days in that month.-->
+        <div class="problem12 style">
+            <h2>12. Write a ts program to input month number and print number of days in that month.</h2>
+            <form id="problem12">
+                <h3>Type a Number of Month</h3>
+                <input type="number" id="input12"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 13. Write a ts program to count total number of notes in given amount.-->
+        <div class="problem13 style">
+            <h2>13. Write a ts program to count total number of notes in given amount.</h2>
+            <form id="problem13">
+                <h3>Type a amount</h3>
+                <input type="number" id="input13"> <br />
+                <h3>Select a type of Note</h3>
+                <select id="notes" class="btn">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="5000">5000</option>
+                </select>
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!--14. Write a ts program to input angles of a triangle and check whether triangle is valid or not.-->
+        <div class="problem14 style">
+            <h2>14. Write a ts program to input angles of a triangle and check whether triangle is valid or not.</h2>
+            <form id="problem14">
+                <h3>Type Angle A</h3>
+                <input type="number" id="input14a"> <br />
+                <h3>Type Angle B</h3>
+                <input type="number" id="input14b"> <br />
+                <h3>Type Angle C</h3>
+                <input type="number" id="input14c"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!--15. Write a ts program to input all sides of a triangle and check whether triangle is valid or not.-->
+        <div class="problem15 style">
+            <h2>15. Write a ts program to input all sides of a triangle and check whether triangle is valid or not.</h2>
+            <form id="problem15">
+                <h3>Type Opposite (a)</h3>
+                <input type="number" id="input15a"> <br />
+                <h3>Type Adjacent (b)</h3>
+                <input type="number" id="input15b"> <br />
+                <h3>Type Hypotenuse (c)</h3>
+                <input type="number" id="input15c"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 16. Write a ts program to check whether the triangle is equilateral, isosceles or scalene triangle.-->
+        <div class="problem16 style">
+            <h2>16. Write a ts program to check whether the triangle is equilateral, isosceles or scalene triangle.</h2>
+            <form id="problem16">
+                <h3>Type a Year</h3>
+                <input type="number" id="year"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 17. Write a ts program to find all roots of a quadratic equation..-->
+        <div class="problem17 style">
+            <h2>17. Write a ts program to find all roots of a quadratic equation.</h2>
+            <form id="problem17">
+                <h3>Type the value of "a"</h3>
+                <input type="number" id="input17a"> <br />
+                <h3>Type the value of "b"</h3>
+                <input type="number" id="input17b"> <br />
+                <h3>Type the value of "c"</h3>
+                <input type="number" id="input17c"> <br />
+                <h3>Type the value of "x"</h3>
+                <input type="number" id="input17x"> <br />
+
+                <h3>Find The Missing Value Of Equation </h3>
+                <button type="submit">Find</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 18. Write a ts program to calculate profit or loss.-->
+        <div class="problem18 style">
+            <h2>18. Write a ts program to calculate profit or loss.</h2>
+            <form id="problem18">
+                <h3>Type Parchage Price</h3>
+                <input type="number" id="input18a"> <br />
+                <h3>Type Sale Price</h3>
+                <input type="number" id="input18b"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 19. Write a ts program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:-->
+        <div class="problem19 style">
+            <h2>19. Write a ts program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and
+                Computer. Calculate percentage and grade according to following:</h2>
+            <form id="problem19">
+                <h3>Type Physics Obtaining Marks</h3>
+                <input type="number" id="physics"> <br />
+                <h3>Type Chemistry Obtaining Marks</h3>
+                <input type="number" id="chemistry"> <br />
+                <h3>Type Mathematics Obtaining Marks</h3>
+                <input type="number" id="mathematics"> <br />
+                <h3>Type Biology Obtaining Marks</h3>
+                <input type="number" id="biology"> <br />
+                <h3>Type Computer Obtaining Marks</h3>
+                <input type="number" id="computer"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 20. Write a ts program to input basic salary of an employee and calculate its Gross salary according to following:-->
+        <div class="problem20 style">
+            <h2>20. Write a ts program to input basic salary of an employee and calculate its Gross salary according to following:</h2>
+            <form id="problem20">
+                <h3>Type Basic Salary</h3>
+                <input type="number" id="input20"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+        <!-- 21. Write a ts program to input electricity unit charges and calculate total electricity bill according to the given condition:-->
+        <div class="problem21 style">
+            <h2>21. Write a ts program to input electricity unit charges and calculate total electricity bill according to the given condition:</h2>
+            <form id="problem21">
+                <h3>Type a Electricity Unit</h3>
+                <input type="number" id="input21"> <br />
+
+                <h3>Check Status</h3>
+                <button type="submit">Check</button>
+                <p>Open Console log to check the output "Press f12"</p>
+            </form>
+        </div>
+
+    </div>
