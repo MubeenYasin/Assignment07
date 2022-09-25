@@ -55,23 +55,103 @@ console.log("Lower Caseed String  = ".concat(toLower('I LOVE MUHAMMAD')));
 /* 7. Write a ts program to toggle case of each character of a string.*/
 /* ---------------------------------------------*/
 function toggleCase(tl) {
+    var t = '';
     for (var tli = 0; tli < tl.length; tli++) {
-        tl.charAt(tli);
-        return tl;
-        // if(tl.charAt(tli) === tl.charAt(tli).toLowerCase){
-        // }
+        var x = tl.charAt(tli);
+        var y = tl.charAt(tli).toUpperCase();
+        if (x === y) {
+            t = t + x.toLowerCase();
+        }
+        else {
+            t = t + x.toUpperCase();
+        }
     }
+    console.log("String ".concat(tl, " after Toggled = ").concat(t));
 }
 console.log("\n--------------------\n   Problem No. 07\n--------------------");
-toggleCase('HkHkjHkH');
-console.log("Toggled Case String  = ".concat(toggleCase('LoVe')));
+toggleCase(' aBcDeF');
+/* ---------------------------------------------*/
+/* 8. Write a ts program to find total number of alphabets, digits or special character in a string.*/
+/* ---------------------------------------------*/
+function fTotalChar(x) {
+    var numbers = '1234567890';
+    var alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var spacialChars = "~!@#$%^&_=+-*\|()[]{}/?.,<>";
+    var countedNumber = '';
+    var countedAlphet = '';
+    var countedSpacialChar = '';
+    for (var xi = 0; xi < x.length; xi++) {
+        for (var numi = 0; numi < numbers.length; numi++) {
+            if (x.charAt(xi) === numbers.charAt(numi)) {
+                countedNumber = countedNumber + x.charAt(xi);
+            }
+        }
+    }
+    for (var xi = 0; xi < x.length; xi++) {
+        for (var alph = 0; alph < alphabets.length; alph++) {
+            if (x.charAt(xi) === alphabets.charAt(alph)) {
+                countedAlphet = countedAlphet + x.charAt(xi);
+            }
+        }
+    }
+    for (var xi = 0; xi < x.length; xi++) {
+        for (var spc = 0; spc < alphabets.length; spc++) {
+            if (x.charAt(xi) === spacialChars.charAt(spc)) {
+                countedSpacialChar = countedSpacialChar + x.charAt(xi);
+            }
+        }
+    }
+    console.log("Input String = ".concat(x));
+    console.log("Total Numbers ".concat(countedNumber, " = ").concat(countedNumber.length));
+    console.log("Total Alphabets ".concat(countedAlphet, " = ").concat(countedAlphet.length));
+    console.log("Total Spacial Char ".concat(countedSpacialChar, " = ").concat(countedSpacialChar.length));
+}
+console.log("\n--------------------\n   Problem No. 08\n--------------------");
+fTotalChar('hgj876806525/)(65*)*GKGKJG');
+/* ---------------------------------------------*/
+/* 9. Write a ts program to count total number of vowels and consonants in a string.*/
+/* ---------------------------------------------*/
+function toVowelConstant(x) {
+    var vowel = "eaiouAEIOU";
+    var consonant = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ";
+    var countedVowel = '';
+    var countedConstant = '';
+    for (var xi = 0; xi < x.length; xi++) {
+        for (var vow = 0; vow < vowel.length; vow++) {
+            if (x.charAt(xi) === vowel.charAt(vow)) {
+                countedVowel = countedVowel + x.charAt(xi);
+            }
+        }
+    }
+    for (var xi = 0; xi < x.length; xi++) {
+        for (var con = 0; con < consonant.length; con++) {
+            if (x.charAt(xi) === consonant.charAt(con)) {
+                countedConstant = countedConstant + x.charAt(xi);
+            }
+        }
+    }
+    console.log("Input String = ".concat(x));
+    console.log("Total Vowels ".concat(countedVowel, " = ").concat(countedVowel.length));
+    console.log("Total Constants ".concat(countedConstant, " = ").concat(countedConstant.length));
+}
+console.log("\n--------------------\n   Problem No. 09\n--------------------");
+toVowelConstant('GhYIKbgFDeiouCfR');
+/* ---------------------------------------------*/
+/* 10. Write a ts program to count total number of words in a string.*/
+/* ---------------------------------------------*/
+function toNumOfWords(w) {
+    var splited = w.split(" ");
+    var countedWords = splited.length;
+    console.log("String = ".concat(w));
+    console.log("Total words in String = ".concat(countedWords));
+}
+console.log("\n--------------------\n   Problem No. 10\n--------------------");
+toNumOfWords('My name is Mubeen Yasin');
 /* ---------------------------------------------*/
 /* */
 /* ---------------------------------------------*/
 /*
 String Exercise
-8. Write a ts program to find total number of alphabets, digits or special character in a string.
-9. Write a ts program to count total number of vowels and consonants in a string.
 10. Write a ts program to count total number of words in a string.
 11. Write a ts program to find reverse of a string.
 12. Write a ts program to check whether a string is palindrome or not.
