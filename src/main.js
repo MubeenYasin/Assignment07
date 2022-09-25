@@ -148,15 +148,61 @@ function toNumOfWords(w) {
 console.log("\n--------------------\n   Problem No. 10\n--------------------");
 toNumOfWords('My name is Mubeen Yasin');
 /* ---------------------------------------------*/
+/* 11. Write a ts program to find reverse of a string.*/
+/* ---------------------------------------------*/
+function findReverseChar(x) {
+    var splited = x.split('');
+    var reversed = splited.reverse();
+    var joined = reversed.join('');
+    // console.log(reversed)
+    // console.log(joined)
+    console.log("String = ".concat(x));
+    console.log("Reverse words in String = ".concat(joined));
+}
+console.log("\n--------------------\n   Problem No. 11\n--------------------");
+findReverseChar('madam');
+/* ---------------------------------------------*/
+/* 12. Write a ts program to check whether a string is palindrome or not.*/
+/* ---------------------------------------------*/
+function isPalindrom(x) {
+    var splited = x.split('');
+    var reversed = splited.reverse();
+    var joined = reversed.join('');
+    if (x === joined) {
+        console.log("The String ( ".concat(x, " ) is \"PALINDROME\""));
+    }
+    else {
+        console.log("The String ( ".concat(x, " ) is \" NOT PALINDROME\""));
+    }
+}
+console.log("\n--------------------\n   Problem No. 12\n--------------------");
+isPalindrom('abcdcba');
+/* ---------------------------------------------*/
+/* 13. Write a ts program to reverse order of words in a given string*/
+/* ---------------------------------------------*/
+function findReverse(x) {
+    var splited = x.split(' ');
+    var reversed = splited.reverse();
+    var joined = reversed.join(' ');
+    // console.log(reversed)
+    // console.log(joined)
+    console.log("String = ".concat(x));
+    console.log("Reverse words in String = ".concat(joined));
+}
+console.log("\n--------------------\n   Problem No. 13\n--------------------");
+findReverse('My name is Mubeen Yasin');
+/* ---------------------------------------------*/
+/* 14. Write a ts program to find first occurrence of a character in a given string.*/
+/* ---------------------------------------------*/
+function isOccur(x) {
+}
+console.log("\n--------------------\n   Problem No. 14\n--------------------");
+isOccur('My name is Mubeen Yasin');
+/* ---------------------------------------------*/
 /* */
 /* ---------------------------------------------*/
 /*
 String Exercise
-10. Write a ts program to count total number of words in a string.
-11. Write a ts program to find reverse of a string.
-12. Write a ts program to check whether a string is palindrome or not.
-13. Write a ts program to reverse order of words in a given string
-14. Write a ts program to find first occurrence of a character in a given string.
 15. Write a ts program to find last occurrence of a character in a given string.
 16. Write a ts program to search all occurrences of a character in given string.
 17. Write a ts program to count occurrences of a character in given string.
