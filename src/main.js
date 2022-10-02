@@ -76,7 +76,7 @@ toggleCase(' aBcDeF');
 function fTotalChar(x) {
     var numbers = '1234567890';
     var alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    var spacialChars = "~!@#$%^&_=+-*\|()[]{}/?.,<>";
+    var spacialChars = "~!@#$%^&_=+-*\|()[]{ }/?.,<>";
     var countedNumber = '';
     var countedAlphet = '';
     var countedSpacialChar = '';
@@ -86,15 +86,11 @@ function fTotalChar(x) {
                 countedNumber = countedNumber + x.charAt(xi);
             }
         }
-    }
-    for (var xi = 0; xi < x.length; xi++) {
         for (var alph = 0; alph < alphabets.length; alph++) {
             if (x.charAt(xi) === alphabets.charAt(alph)) {
                 countedAlphet = countedAlphet + x.charAt(xi);
             }
         }
-    }
-    for (var xi = 0; xi < x.length; xi++) {
         for (var spc = 0; spc < alphabets.length; spc++) {
             if (x.charAt(xi) === spacialChars.charAt(spc)) {
                 countedSpacialChar = countedSpacialChar + x.charAt(xi);
@@ -107,7 +103,7 @@ function fTotalChar(x) {
     console.log("Total Spacial Char ".concat(countedSpacialChar, " = ").concat(countedSpacialChar.length));
 }
 console.log("\n--------------------\n   Problem No. 08\n--------------------");
-fTotalChar('hgj876806525/)(65*)*GKGKJG');
+fTotalChar('hgj876806525/)(65**GKGK JG');
 /* ---------------------------------------------*/
 /* 9. Write a ts program to count total number of vowels and consonants in a string.*/
 /* ---------------------------------------------*/
@@ -122,8 +118,6 @@ function toVowelConstant(x) {
                 countedVowel = countedVowel + x.charAt(xi);
             }
         }
-    }
-    for (var xi = 0; xi < x.length; xi++) {
         for (var con = 0; con < consonant.length; con++) {
             if (x.charAt(xi) === consonant.charAt(con)) {
                 countedConstant = countedConstant + x.charAt(xi);
@@ -194,39 +188,210 @@ findReverse('My name is Mubeen Yasin');
 /* ---------------------------------------------*/
 /* 14. Write a ts program to find first occurrence of a character in a given string.*/
 /* ---------------------------------------------*/
-function isOccur(x) {
+function whatFirstOccur(x, y) {
+    var occurrence = x.indexOf(y);
+    console.log("First Occurance of (".concat(y, ") in string (").concat(x, ") = ").concat(occurrence));
 }
 console.log("\n--------------------\n   Problem No. 14\n--------------------");
-isOccur('My name is Mubeen Yasin');
+whatFirstOccur('Mubeen Ameen', 'e');
+/* ---------------------------------------------*/
+/* 15. Write a ts program to find last occurrence of a character in a given string.*/
+/* ---------------------------------------------*/
+function whatLasttOccur(x, y) {
+    var occurrence = x.lastIndexOf(y);
+    console.log("First Occurance of (".concat(y, ") in string (").concat(x, ") = ").concat(occurrence));
+}
+console.log("\n--------------------\n   Problem No. 15\n--------------------");
+whatLasttOccur('Mubeen Ameen', 'e');
+/* ---------------------------------------------*/
+/* 16. Write a ts program to search all occurrences of a character in given string.*/
+/* ---------------------------------------------*/
+function allOccur(x, y) {
+    var toOccurrance = 0;
+    for (var i = 0; i < x.length; i++) {
+        if (x.charAt(i) === y) {
+            var occur = i;
+            console.log("Occurance of (".concat(y, ") in \"").concat(x, "\" at Index = ").concat(occur));
+            toOccurrance++;
+        }
+    }
+    console.log("Total Occurrance of \"".concat(y, "\" = ").concat(toOccurrance));
+}
+console.log("\n--------------------\n   Problem No. 16\n--------------------");
+allOccur('Mubeen Ameen', 'e');
+/* ---------------------------------------------*/
+/* 17. Write a ts program to count occurrences of a character in given string.*/
+/* ---------------------------------------------*/
+function countOccur(x, y) {
+    var toOccurrance = 0;
+    for (var i = 0; i < x.length; i++) {
+        if (x.charAt(i) === y) {
+            toOccurrance++;
+        }
+    }
+    console.log("Total Occurrance of \"".concat(y, "\" in \"").concat(x, "\"= ").concat(toOccurrance));
+}
+console.log("\n--------------------\n   Problem No. 17\n--------------------");
+countOccur('Mubeen Ameen', 'e');
+/* ---------------------------------------------*/
+/* 18. Write a ts program to find highest frequency character in a string.*/
+/* ---------------------------------------------*/
+console.log("\n--------------------\n   Problem No. 18\n--------------------\nNot Solved");
+/* ---------------------------------------------*/
+/* 19. Write a ts program to find lowest frequency character in a string.*/
+/* ---------------------------------------------*/
+console.log("\n--------------------\n   Problem No. 19\n--------------------\nNot Solved");
+/* ---------------------------------------------*/
+/* 20. Write a ts program to count frequency of each character in a string.*/
+/* ---------------------------------------------*/
+function eachFrequency(x) {
+    var toOccurrance = 0;
+    for (var i = 0; i < x.length; i++) {
+        for (var i2 = 0; i2 < x.length; i2++)
+            if (x.charAt(i) === x.charAt(i2)) {
+                i++;
+                console.log(x.charAt(i - 1));
+                toOccurrance++;
+            }
+    }
+    console.log("Total Occurrance of \"".concat(x, "\"= ").concat(toOccurrance));
+}
+console.log("\n--------------------\n   Problem No. 20\n--------------------\nNot Solved");
+// eachFrequency('Mubeeen  Ameen')
+/* ---------------------------------------------*/
+/* 21. Write a ts program to remove first occurrence of a character from string.*/
+/* ---------------------------------------------*/
+function remove1stOccur(x, y) {
+    // let firstOccur:number = x.indexOf(y)
+    var newString = x.replace(y, ''); //Replace a Charactor or word with blank quoats
+    console.log(newString);
+}
+console.log("\n--------------------\n   Problem No. 21\n--------------------");
+remove1stOccur('Mubeeen Yasin', 'e');
+/* ---------------------------------------------*/
+/* 22. Write a ts program to remove last occurrence of a character from string.*/
+/* ---------------------------------------------*/
+function removeLastOccur(x, y) {
+    var newArray = x.split(''); // Convert original string into Array
+    var lastOccur = x.lastIndexOf(y); // find last occurrance of the charactor
+    var removeChar = newArray.splice(lastOccur, 1); //Delet last occurrance of the charactor
+    var finalString = newArray.join(''); //Convert the Array back to string
+    // console.log(lastOccur)
+    // console.log(x[lastOccur])
+    // console.log(`New Array = ${newArray}`)
+    console.log("Original String = ".concat(x, "\n   Final String = ").concat(finalString));
+}
+console.log("\n--------------------\n   Problem No. 22\n--------------------");
+removeLastOccur('Mubeen Yasinn', 'n');
+/* ---------------------------------------------*/
+/* 23. Write a ts program to remove all occurrences of a character from string.*/
+/* ---------------------------------------------*/
+function removeAllOccur(x, y) {
+    var newStr = "";
+    for (var xi = 0; xi < x.length; xi++) {
+        if (x[xi] === y) {
+            var replaceChar = x[xi].replace(y, "");
+            newStr = newStr + replaceChar;
+        }
+        else {
+            newStr = newStr + x[xi];
+        }
+    }
+    console.log(newStr);
+}
+console.log("\n--------------------\n   Problem No. 23\n--------------------");
+removeAllOccur('MubeenYasinn', 'n');
+/* ---------------------------------------------*/
+/* 24. Write a ts program to remove all repeated characters from a given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 25. Write a ts program to replace first occurrence of a character with another in a string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 26. Write a ts program to replace last occurrence of a character with another in a string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 27. Write a ts program to replace all occurrences of a character with another in a string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 28. Write a ts program to find first occurrence of a word in a given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 29. Write a ts program to find last occurrence of a word in a given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 30. Write a ts program to search all occurrences of a word in given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 31. Write a ts program to count occurrences of a word in a given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 32. Write a ts program to remove first occurrence of a word from string.*/
+/* ---------------------------------------------*/
+function removeFirstWord(x) {
+    var splitedArray = x.split(" ");
+    splitedArray.splice(0, 1);
+    var finalString = splitedArray.join(' ');
+    // console.log(`splited Array = ${splitedArray}`)
+    console.log("Original String        = ".concat(x, "\nRemoved 1st Occurrance = ").concat(finalString));
+}
+console.log("\n--------------------\n   Problem No. 32\n--------------------");
+removeFirstWord('Always be humble and postive');
+/* ---------------------------------------------*/
+/* 33. Write a ts program to remove last occurrence of a word in given string.*/
+/* ---------------------------------------------*/
+function removeLastWord(x) {
+    var splitedArray = x.split(" ");
+    splitedArray.splice(-1, 1);
+    var finalString = splitedArray.join(' ');
+    // console.log(`splited Array = ${splitedArray}`)
+    console.log("Original String        = ".concat(x, "\nRemoved 1st Occurrance = ").concat(finalString));
+}
+console.log("\n--------------------\n   Problem No. 32\n--------------------");
+removeLastWord('Always be humble and postive');
+/* ---------------------------------------------*/
+/* 34. Write a ts program to remove all occurrence of a word in given string.*/
+/* ---------------------------------------------*/
+function removeAllOccurWord(x, y) {
+    var splitedArray = x.split(" ");
+    // console.log(splitedArray)
+    for (var xi = 0; xi < splitedArray.length; xi++) {
+        if (splitedArray[xi] === y) {
+            splitedArray.splice(xi, 1);
+        }
+    }
+    var finalString = splitedArray.join(' ');
+    // console.log(splitedArray)
+    console.log("Original String = ".concat(x, "\nRemove All Occurrance of ").concat(y, " = ").concat(finalString));
+}
+console.log("\n--------------------\n   Problem No. 34\n--------------------");
+removeAllOccurWord('and Always be humble and postive and', 'and');
+/* ---------------------------------------------*/
+/* 35. Write a ts program to trim leading white space characters from given string.*/
+/* ---------------------------------------------*/
+function trimLeadingSpace(x) {
+    var leadTrimed = x.trim();
+    console.log(leadTrimed);
+}
+console.log("\n--------------------\n   Problem No. 35\n--------------------");
+trimLeadingSpace('           Always be humble and postive       ');
+/* ---------------------------------------------*/
+/* 36. Write a ts program to trim trailing white space characters from given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 37. Write a ts program to trim both leading and trailing white space characters from given string.*/
+/* ---------------------------------------------*/
+/* ---------------------------------------------*/
+/* 38. Write a ts program to remove all extra blank spaces from given string.*/
+/* ---------------------------------------------*/
+function removeExtraSpace(x) {
+}
+console.log("\n--------------------\n   Problem No. 38\n--------------------");
+removeExtraSpace('Mubeen  Yasin  n');
 /* ---------------------------------------------*/
 /* */
 /* ---------------------------------------------*/
 /*
-String Exercise
-15. Write a ts program to find last occurrence of a character in a given string.
-16. Write a ts program to search all occurrences of a character in given string.
-17. Write a ts program to count occurrences of a character in given string.
-18. Write a ts program to find highest frequency character in a string.
-19. Write a ts program to find lowest frequency character in a string.
-20. Write a ts program to count frequency of each character in a string.
-21. Write a ts program to remove first occurrence of a character from string.
-22. Write a ts program to remove last occurrence of a character from string.
-23. Write a ts program to remove all occurrences of a character from string.
-24. Write a ts program to remove all repeated characters from a given string.
-25. Write a ts program to replace first occurrence of a character with another in a string.
-26. Write a ts program to replace last occurrence of a character with another in a string.
-27. Write a ts program to replace all occurrences of a character with another in a string.
-28. Write a ts program to find first occurrence of a word in a given string.
-29. Write a ts program to find last occurrence of a word in a given string.
-30. Write a ts program to search all occurrences of a word in given string.
-31. Write a ts program to count occurrences of a word in a given string.
-32. Write a ts program to remove first occurrence of a word from string.
-33. Write a ts program to remove last occurrence of a word in given string.
-34. Write a ts program to remove all occurrence of a word in given string.
-35. Write a ts program to trim leading white space characters from given string.
-36. Write a ts program to trim trailing white space characters from given string.
-37. Write a ts program to trim both leading and trailing white space characters from given string.
-38. Write a ts program to remove all extra blank spaces from given string.
 
 conditional operators programming exercises
 
