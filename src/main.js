@@ -208,17 +208,19 @@ whatLasttOccur('Mubeen Ameen', 'e');
 /* ---------------------------------------------*/
 function allOccur(x, y) {
     var toOccurrance = 0;
+    var num = 1;
     for (var i = 0; i < x.length; i++) {
         if (x.charAt(i) === y) {
             var occur = i;
-            console.log("Occurance of (".concat(y, ") in \"").concat(x, "\" at Index = ").concat(occur));
+            console.log("".concat(num, " Occurance of (").concat(y, ") in \"").concat(x, "\" at Index = ").concat(occur));
             toOccurrance++;
+            num++;
         }
     }
-    console.log("Total Occurrance of \"".concat(y, "\" = ").concat(toOccurrance));
+    // console.log(`Total Occurrance of "${y}" = ${toOccurrance}`)
 }
 console.log("\n--------------------\n   Problem No. 16\n--------------------");
-allOccur('Mubeen Ameen', 'e');
+allOccur('Mubeen Ameen', 'n');
 /* ---------------------------------------------*/
 /* 17. Write a ts program to count occurrences of a character in given string.*/
 /* ---------------------------------------------*/
@@ -232,7 +234,7 @@ function countOccur(x, y) {
     console.log("Total Occurrance of \"".concat(y, "\" in \"").concat(x, "\"= ").concat(toOccurrance));
 }
 console.log("\n--------------------\n   Problem No. 17\n--------------------");
-countOccur('Mubeen Ameen', 'e');
+countOccur('Mubeen Ameen', 'n');
 /* ---------------------------------------------*/
 /* 18. Write a ts program to find highest frequency character in a string.*/
 /* ---------------------------------------------*/
@@ -246,61 +248,76 @@ console.log("\n--------------------\n   Problem No. 19\n--------------------\nNo
 /* ---------------------------------------------*/
 function eachFrequency(x) {
     var toOccurrance = 0;
+    var newStr = '';
     for (var i = 0; i < x.length; i++) {
         for (var i2 = 0; i2 < x.length; i2++)
-            if (x.charAt(i) === x.charAt(i2)) {
+            if (x[i] === x[i2]) {
+                newStr += x[i];
                 i++;
-                console.log(x.charAt(i - 1));
-                toOccurrance++;
+                // console.log(x.charAt(i - 1))
+                // toOccurrance++
             }
     }
+    console.log("New Str= ".concat(newStr));
     console.log("Total Occurrance of \"".concat(x, "\"= ").concat(toOccurrance));
 }
 console.log("\n--------------------\n   Problem No. 20\n--------------------\nNot Solved");
-// eachFrequency('Mubeeen  Ameen')
+eachFrequency('Mubeeen  Ameen');
 /* ---------------------------------------------*/
 /* 21. Write a ts program to remove first occurrence of a character from string.*/
 /* ---------------------------------------------*/
-function remove1stOccur(x, y) {
-    // let firstOccur:number = x.indexOf(y)
-    var newString = x.replace(y, ''); //Replace a Charactor or word with blank quoats
-    console.log(newString);
-}
-console.log("\n--------------------\n   Problem No. 21\n--------------------");
-remove1stOccur('Mubeeen Yasin', 'e');
+// function remove1stOccur(x: string, y: string) {
+//     // let firstOccur:number = x.indexOf(y)
+//     let newString: string = x.replace(y, '') //Replace a Charactor or word with blank quoats
+//     console.log(`Original String = ${x}
+// Remove First Occurrance of "${y}" = ${newString}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 21
+// --------------------`)
+// remove1stOccur('Mubeeen Yasin', 'e')
 /* ---------------------------------------------*/
 /* 22. Write a ts program to remove last occurrence of a character from string.*/
 /* ---------------------------------------------*/
-function removeLastOccur(x, y) {
-    var newArray = x.split(''); // Convert original string into Array
-    var lastOccur = x.lastIndexOf(y); // find last occurrance of the charactor
-    var removeChar = newArray.splice(lastOccur, 1); //Delet last occurrance of the charactor
-    var finalString = newArray.join(''); //Convert the Array back to string
-    // console.log(lastOccur)
-    // console.log(x[lastOccur])
-    // console.log(`New Array = ${newArray}`)
-    console.log("Original String = ".concat(x, "\n   Final String = ").concat(finalString));
-}
-console.log("\n--------------------\n   Problem No. 22\n--------------------");
-removeLastOccur('Mubeen Yasinn', 'n');
-/* ---------------------------------------------*/
-/* 23. Write a ts program to remove all occurrences of a character from string.*/
-/* ---------------------------------------------*/
-function removeAllOccur(x, y) {
-    var newStr = "";
-    for (var xi = 0; xi < x.length; xi++) {
-        if (x[xi] === y) {
-            var replaceChar = x[xi].replace(y, "");
-            newStr = newStr + replaceChar;
-        }
-        else {
-            newStr = newStr + x[xi];
-        }
-    }
-    console.log(newStr);
-}
-console.log("\n--------------------\n   Problem No. 23\n--------------------");
-removeAllOccur('MubeenYasinn', 'n');
+// function removeLastOccur(x: string, y: string) {
+//     let newArray: string[] = x.split('') // Convert original string into Array
+//     let lastOccur: number = x.lastIndexOf(y)    // find last occurrance of the charactor
+//     let removeChar: string[] = newArray.splice(lastOccur, 1) //Delet last occurrance of the charactor
+//     let finalString: string = newArray.join('')  //Convert the Array back to string
+//     // console.log(lastOccur)
+//     // console.log(x[lastOccur])
+//     // console.log(`New Array = ${newArray}`)
+//     console.log(`Original String = ${x}
+// Remove Last Occurrance of "${y}" = ${finalString}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 22
+// --------------------`)
+// removeLastOccur('Mubeen Yasinn', 'n')
+// /* ---------------------------------------------*/
+// /* 23. Write a ts program to remove all occurrences of a character from string.*/
+// /* ---------------------------------------------*/
+// function removeAllOccur(x: string, y: string) {
+//     let newStr: string = ""
+//     for (let xi: number = 0; xi < x.length; xi++) {
+//         if (x[xi] === y) {
+//             let replaceChar: string = x[xi].replace(y, "")
+//             newStr = newStr + replaceChar
+//         }
+//         else {
+//             newStr = newStr + x[xi]
+//         }
+//     }
+//     console.log(`Original String = ${x}
+// Remove all occurrance of a char = ${newStr}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 23
+// --------------------`)
+// removeAllOccur('Mubeen Yasinn', 'n')
 /* ---------------------------------------------*/
 /* 24. Write a ts program to remove all repeated characters from a given string.*/
 /* ---------------------------------------------*/
@@ -328,66 +345,127 @@ removeAllOccur('MubeenYasinn', 'n');
 /* ---------------------------------------------*/
 /* 32. Write a ts program to remove first occurrence of a word from string.*/
 /* ---------------------------------------------*/
-function removeFirstWord(x) {
-    var splitedArray = x.split(" ");
-    splitedArray.splice(0, 1);
-    var finalString = splitedArray.join(' ');
-    // console.log(`splited Array = ${splitedArray}`)
-    console.log("Original String        = ".concat(x, "\nRemoved 1st Occurrance = ").concat(finalString));
-}
-console.log("\n--------------------\n   Problem No. 32\n--------------------");
-removeFirstWord('Always be humble and postive');
-/* ---------------------------------------------*/
-/* 33. Write a ts program to remove last occurrence of a word in given string.*/
-/* ---------------------------------------------*/
-function removeLastWord(x) {
-    var splitedArray = x.split(" ");
-    splitedArray.splice(-1, 1);
-    var finalString = splitedArray.join(' ');
-    // console.log(`splited Array = ${splitedArray}`)
-    console.log("Original String        = ".concat(x, "\nRemoved 1st Occurrance = ").concat(finalString));
-}
-console.log("\n--------------------\n   Problem No. 32\n--------------------");
-removeLastWord('Always be humble and postive');
-/* ---------------------------------------------*/
-/* 34. Write a ts program to remove all occurrence of a word in given string.*/
-/* ---------------------------------------------*/
-function removeAllOccurWord(x, y) {
-    var splitedArray = x.split(" ");
-    // console.log(splitedArray)
-    for (var xi = 0; xi < splitedArray.length; xi++) {
-        if (splitedArray[xi] === y) {
-            splitedArray.splice(xi, 1);
-        }
-    }
-    var finalString = splitedArray.join(' ');
-    // console.log(splitedArray)
-    console.log("Original String = ".concat(x, "\nRemove All Occurrance of ").concat(y, " = ").concat(finalString));
-}
-console.log("\n--------------------\n   Problem No. 34\n--------------------");
-removeAllOccurWord('and Always be humble and postive and', 'and');
-/* ---------------------------------------------*/
-/* 35. Write a ts program to trim leading white space characters from given string.*/
-/* ---------------------------------------------*/
-function trimLeadingSpace(x) {
-    var leadTrimed = x.trim();
-    console.log(leadTrimed);
-}
-console.log("\n--------------------\n   Problem No. 35\n--------------------");
-trimLeadingSpace('           Always be humble and postive       ');
-/* ---------------------------------------------*/
-/* 36. Write a ts program to trim trailing white space characters from given string.*/
-/* ---------------------------------------------*/
-/* ---------------------------------------------*/
-/* 37. Write a ts program to trim both leading and trailing white space characters from given string.*/
-/* ---------------------------------------------*/
-/* ---------------------------------------------*/
-/* 38. Write a ts program to remove all extra blank spaces from given string.*/
-/* ---------------------------------------------*/
-function removeExtraSpace(x) {
-}
-console.log("\n--------------------\n   Problem No. 38\n--------------------");
-removeExtraSpace('Mubeen  Yasin  n');
+// function removeFirstWord(x: string) {
+//     let splitedArray: string[] = x.split(" ")
+//     splitedArray.splice(0, 1)
+//     let finalString: string = splitedArray.join(' ')
+//     // console.log(`splited Array = ${splitedArray}`)
+//     console.log(`Original String        = ${x}
+// Removed 1st Occurrance = ${finalString}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 32
+// --------------------`)
+// removeFirstWord('Always be humble and postive mnm')
+// /* ---------------------------------------------*/
+// /* 33. Write a ts program to remove last occurrence of a word in given string.*/
+// /* ---------------------------------------------*/
+// function removeLastWord(x: string) {
+//     let splitedArray: string[] = x.split(" ")
+//     splitedArray.splice(-1, 1)
+//     let finalString: string = splitedArray.join(' ')
+//     // console.log(`splited Array = ${splitedArray}`)
+//     console.log(`Original String         = ${x}
+// Removed Last Occurrance = ${finalString}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 33
+// --------------------`)
+// removeLastWord('Always be humble and postive')
+// /* ---------------------------------------------*/
+// /* 34. Write a ts program to remove all occurrence of a word in given string.*/
+// /* ---------------------------------------------*/
+// function removeAllOccurWord(x: string, y: string) {
+//     /*-------Solved by self Logics------ */
+//     let splitedArray: string[] = x.split(" ")
+//     // console.log(splitedArray)
+//     for (let xi: number = 0; xi < splitedArray.length; xi++) {
+//         if (splitedArray[xi] === y) {
+//             splitedArray.splice(xi, 1)
+//         }
+//     }
+//     let finalString: string = splitedArray.join(' ')
+//     // console.log(splitedArray)
+//     console.log(`Original String         = ${x}
+// Remove Occurrance "${y}" = ${finalString}`)
+//     // console.log(`String = ${x}`)
+//     /*-------Solved by built in methoods RegExp() and replace()------ */
+//     // let re = RegExp(`\\b${y}\\b`, 'gi') // `\\b${y}\\b` stor input in varabel, g for all match, i for case sensitive
+//     // let removeOccurance:string = x.replace(re, "")
+//     // console.log(`result = ${removeOccurance}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 34
+// --------------------`)
+// removeAllOccurWord('and Always be humble and postive and', 'and')
+// /* ---------------------------------------------*/
+// /* 35. Write a ts program to trim leading white space characters from given string.*/
+// /* ---------------------------------------------*/
+// function trimLeadingSpace(x: string) {
+//     let trimLeadingString:string = x.replace(/\s+$/g, ' ')
+//     console.log(`Original String     = **${x}**
+// Trim Leading Space = **${trimLeadingString}**`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 35
+// --------------------`)
+// trimLeadingSpace('           Always be humble and postive       ')
+// /* ---------------------------------------------*/
+// /* 36. Write a ts program to trim trailing white space characters from given string.*/
+// /* ---------------------------------------------*/
+// /*
+// The regular expression used is /^\s+|\s+$/g 
+// / and / mark the beginning and end of the pattern
+// ^\s+ specifies to match one or more spaces at the beginning of the string
+// | means OR
+// \s+$ specifies to match one or more spaces at the end of the string
+// g specifies to replace all occurrences.
+// */
+// function trimTrailingSpace(x: string) {
+//     let trimTrailingString:string = x.replace(/^\s+/g, ' ')
+//     console.log(`Original String     = **${x}**
+// Trim Trailing Space = **${trimTrailingString}**`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 36
+// --------------------`)
+// trimTrailingSpace('           Always be humble and postive       ')
+// /* ---------------------------------------------*/
+// /* 37. Write a ts program to trim both leading and trailing white space characters from given string.*/
+// /* ---------------------------------------------*/
+// function trimBothSide(x: string) {
+//     let leadTrimed: string = x.trim()
+//     console.log(`Original String      = **${x}**
+// Trim both side Space = **${leadTrimed}**`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 37
+// --------------------`)
+// trimBothSide('           Always be humble and postive       ')
+// /* ---------------------------------------------*/
+// /* 38. Write a ts program to remove all extra blank spaces from given string.*/
+// /* ---------------------------------------------*/
+// function removeExtraSpace(x: string) {
+//     let finalString: string = x.replace(/\s+/g, ' ')
+//     /*
+//     \s: matches any whitespace symbol: spaces, tabs, and line breaks
+//      +: match one or more of the preceding tokens(referencing \s)
+//     g: the g at the end indicates iterative searching throughout the full string
+//     */
+//     console.log(`Original String    = ${x}
+// Remove Extra Space = ${finalString}`)
+// }
+// console.log(`
+// --------------------
+//    Problem No. 38
+// --------------------`)
+// removeExtraSpace('Mubeen     Yasin   m      b')
 /* ---------------------------------------------*/
 /* */
 /* ---------------------------------------------*/
